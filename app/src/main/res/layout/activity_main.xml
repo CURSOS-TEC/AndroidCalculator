@@ -52,7 +52,7 @@
                         android:text="CE"
                         android:background="@color/colorOrange"
                         android:textColor="@color/colorWhite"
-                        android:margin ="4dp" />
+                        />
 
                     <Button
                         android:layout_width="60dp"
@@ -60,7 +60,7 @@
                         android:text="C"
                         android:background="@color/colorOrange"
                         android:textColor="@color/colorWhite"
-                        android:margin ="4dp"/>
+                        />
 
                 </LinearLayout>
 
