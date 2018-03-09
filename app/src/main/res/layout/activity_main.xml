@@ -6,10 +6,15 @@
     android:layout_height="match_parent"
     tools:context="com.soa.jesteban.calculator.MainActivity">
 
+    <!-- Layout pantalla completa  -->
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground">
+
+
+
 
     </LinearLayout>
 
