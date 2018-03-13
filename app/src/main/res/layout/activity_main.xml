@@ -10,10 +10,10 @@
 
     <!-- Layout pantalla completa  -->
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
+        android:layout_width="382dp"
         android:layout_height="match_parent"
         android:background="@color/colorBackground"
+        android:orientation="vertical"
         android:padding="30dp">
 
         <!-- Screen -->
@@ -26,22 +26,24 @@
             <!-- Text to show the result-->
             <TextView
                 android:id="@+id/result_text"
-                android:fontFamily="@font/led_display_7"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:fontFamily="@font/led_display_7"
+                android:padding="2dp"
+                android:text=""
                 android:textColor="@color/colorOrange"
-                android:text="12345"
-                android:textSize="50dp"/>
+                android:textSize="50dp" />
 
             <!-- Text to show the operation-->
             <TextView
                 android:id="@+id/result_operation"
-                android:fontFamily="@font/led_display_7"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:fontFamily="@font/led_display_7"
+                android:padding="2dp"
+                android:text=""
                 android:textColor="@color/colorOrange"
-                android:text="12345"
-                android:textSize="20dp"/>
+                android:textSize="20dp" />
         </LinearLayout>
 
         <!-- Keyboard Auxiliar-->
@@ -59,30 +61,29 @@
                 <TextView
                     android:layout_width="60dp"
                     android:layout_height="40dp"
-                    android:text="SOA"/>
+                    android:text="SOA" />
 
                 <LinearLayout
-                    android:orientation="horizontal"
                     android:layout_width="610dp"
                     android:layout_height="40dp"
                     android:background="@color/colorPrimary"
-                    >
+                    android:orientation="horizontal">
 
                     <Button
+                        android:id="@+id/button_ce"
                         android:layout_width="60dp"
                         android:layout_height="40dp"
+                        android:background="@color/colorOrange"
                         android:text="CE"
-                        android:background="@color/colorOrange"
-                        android:textColor="@color/colorWhite"
-                        />
+                        android:textColor="@color/colorWhite" />
 
                     <Button
+                        android:id="@+id/button_c"
                         android:layout_width="60dp"
                         android:layout_height="40dp"
-                        android:text="C"
                         android:background="@color/colorOrange"
-                        android:textColor="@color/colorWhite"
-                        />
+                        android:text="C"
+                        android:textColor="@color/colorWhite" />
 
                 </LinearLayout>
 
@@ -94,8 +95,7 @@
 
 
         <!-- Keyboard de operaciones -->
-        <GridLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="310dp"
@@ -104,130 +104,133 @@
             android:rowCount="4">
 
             <Button
+                android:id="@+id/number_7"
                 android:layout_width="80dp"
                 android:layout_height="60dp"
+                android:background="@color/colorWhite"
                 android:text="7"
-                android:background="@color/colorWhite"
-                android:textColor="@color/colorScreenBackground"
-                />
+                android:textColor="@color/colorScreenBackground" />
 
             <Button
+                android:id="@+id/number_8"
                 android:layout_width="80dp"
                 android:layout_height="60dp"
+                android:background="@color/colorWhite"
                 android:text="8"
-                android:background="@color/colorWhite"
-                android:textColor="@color/colorScreenBackground"
-                />
+                android:textColor="@color/colorScreenBackground" />
 
             <Button
+                android:id="@+id/number_9"
                 android:layout_width="80dp"
                 android:layout_height="60dp"
+                android:background="@color/colorWhite"
                 android:text="9"
-                android:background="@color/colorWhite"
-                android:textColor="@color/colorScreenBackground"
-                />
+                android:textColor="@color/colorScreenBackground" />
 
 
             <Button
+                android:id="@+id/operator_multiply"
                 android:layout_width="80dp"
                 android:layout_height="60dp"
+                android:background="@color/colorWhite"
                 android:text="x"
-                android:background="@color/colorWhite"
-                android:textColor="@color/colorScreenBackground"
-                />
+                android:textColor="@color/colorScreenBackground" />
 
             <Button
+                android:id="@+id/number_4"
                 android:layout_width="80dp"
                 android:layout_height="60dp"
+                android:background="@color/colorWhite"
                 android:text="4"
-                android:background="@color/colorWhite"
-                android:textColor="@color/colorScreenBackground"
-                />
+                android:textColor="@color/colorScreenBackground" />
 
             <Button
+                android:id="@+id/number_5"
                 android:layout_width="80dp"
                 android:layout_height="60dp"
+                android:background="@color/colorWhite"
                 android:text="5"
-                android:background="@color/colorWhite"
-                android:textColor="@color/colorScreenBackground"
-                />
+                android:textColor="@color/colorScreenBackground" />
 
             <Button
+                android:id="@+id/number_6"
                 android:layout_width="80dp"
                 android:layout_height="60dp"
+                android:background="@color/colorWhite"
                 android:text="6"
-                android:background="@color/colorWhite"
-                android:textColor="@color/colorScreenBackground"
-                />
+                android:textColor="@color/colorScreenBackground" />
 
             <Button
+                android:id="@+id/operator_addition"
                 android:layout_width="80dp"
                 android:layout_height="60dp"
+                android:background="@color/colorWhite"
                 android:text="+"
-                android:background="@color/colorWhite"
-                android:textColor="@color/colorScreenBackground"
-                />
+                android:textColor="@color/colorScreenBackground" />
 
             <Button
+                android:id="@+id/number_3"
                 android:layout_width="80dp"
                 android:layout_height="60dp"
+                android:background="@color/colorWhite"
                 android:text="3"
-                android:background="@color/colorWhite"
-                android:textColor="@color/colorScreenBackground"
-                />
+                android:textColor="@color/colorScreenBackground" />
 
             <Button
+                android:id="@+id/number_2"
                 android:layout_width="80dp"
                 android:layout_height="60dp"
+                android:background="@color/colorWhite"
                 android:text="2"
-                android:background="@color/colorWhite"
-                android:textColor="@color/colorScreenBackground"
-                />
+                android:textColor="@color/colorScreenBackground" />
 
             <Button
+                android:id="@+id/number_1"
                 android:layout_width="80dp"
                 android:layout_height="60dp"
+                android:background="@color/colorWhite"
                 android:text="1"
-                android:background="@color/colorWhite"
-                android:textColor="@color/colorScreenBackground"
-                />
+                android:textColor="@color/colorScreenBackground" />
 
             <Button
+                android:id="@+id/operator_subtract"
                 android:layout_width="80dp"
                 android:layout_height="60dp"
+                android:background="@color/colorWhite"
                 android:text="-"
-                android:background="@color/colorWhite"
-                android:textColor="@color/colorScreenBackground"
-                />
+                android:textColor="@color/colorScreenBackground" />
 
             <Button
+                android:id="@+id/number_0"
                 android:layout_width="80dp"
                 android:layout_height="60dp"
+                android:background="@color/colorWhite"
                 android:text="0"
-                android:background="@color/colorWhite"
-                android:textColor="@color/colorScreenBackground"
-                />
+                android:textColor="@color/colorScreenBackground" />
+
             <Button
+                android:id="@+id/operator_float_point"
                 android:layout_width="80dp"
                 android:layout_height="60dp"
+                android:background="@color/colorWhite"
                 android:text="."
-                android:background="@color/colorWhite"
-                android:textColor="@color/colorScreenBackground"
-                />
+                android:textColor="@color/colorScreenBackground" />
+
             <Button
+                android:id="@+id/operator_devide"
                 android:layout_width="80dp"
                 android:layout_height="60dp"
-                android:text="%"
                 android:background="@color/colorWhite"
-                android:textColor="@color/colorScreenBackground"
-                />
+                android:text="/"
+                android:textColor="@color/colorScreenBackground" />
+
             <Button
+                android:id="@+id/operator_equals"
                 android:layout_width="80dp"
                 android:layout_height="60dp"
-                android:text="="
                 android:background="@color/colorOrange"
-                android:textColor="@color/colorWhite"
-                />
+                android:text="="
+                android:textColor="@color/colorWhite" />
         </GridLayout>
     </LinearLayout>
 
